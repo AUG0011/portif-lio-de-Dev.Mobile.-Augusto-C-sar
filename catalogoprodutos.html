@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+
+    <style>
+        body {
+            background-color: steelblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: lightyellow;
+        }
+
+        .grade-produtos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .produto {
+            background-color: rgb(200, 225, 255);
+            padding: 15px;
+            margin: 10px;
+            border-radius: 20px;
+            transition: 0.50s;
+            width: 200px;
+        }
+
+        .produto:hover {
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 10px 15px black;
+        }
+
+        .produto h2 {
+            color: darkblue;
+            margin: 0 0 10px 0;
+        }
+
+        .produto p {
+            font-size: 16px;
+            background-color: rgb(240, 248, 255);
+            padding: 8px;
+            border-radius: 10px;
+            margin: 5px 0;
+        }
+
+        .preco {
+            font-size: 20px;
+            font-weight: bold;
+            color: darkgreen;
+            background-color: rgb(200, 255, 200) !important;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Catálogo de Produtos</h1>
+
+    <div class="grade-produtos">
+
+        <div class="produto">
+            <h2>Isaque</h2>
+            <p>GOTI</p>
+            <p class="preco">R$ 67,6</p>
+        </div>
+
+        <div class="produto">
+            <h2>Tênis</h2>
+            <p>Tênis esportivo leve e confortável</p>
+            <p class="preco">R$ 6,7</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
